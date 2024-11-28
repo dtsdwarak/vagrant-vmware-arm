@@ -5,6 +5,7 @@ Since VMware Fusion only supports running ARM on ARM, the Vagrant Box used in th
 ### Prerequisites
 - [Vagrant v2.4.3](https://developer.hashicorp.com/vagrant/downloads) as well as [Plugin](https://developer.hashicorp.com/vagrant/docs/providers/vmware/installation) and [Utility](https://developer.hashicorp.com/vagrant/docs/providers/vmware/vagrant-vmware-utility)
 - [VMware Fusion Player v13.0 (Free Personal Use License)](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
+- If you have issues installing the plugin, use `export VAGRANT_DISABLE_STRICT_DEPENDENCY_ENFORCEMENT=1` in your shell config. (Ref - [hashicorp/vagrant/issues/13510](https://github.com/hashicorp/vagrant/issues/13510#issuecomment-2431163553))
 ### Directory Structure
 ```
 .
