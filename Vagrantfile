@@ -29,6 +29,7 @@ Vagrant.configure("2") do |config|
       node.vm.provision "setup-hosts", :type => "shell", :path => "scripts/setup-hosts.sh" do |s|
         s.args = ["eth0"]
       end
+      node.vm.provision "install-docker", type: "shell", :path => "scripts/install-docker.sh"
     end
   end
 end
