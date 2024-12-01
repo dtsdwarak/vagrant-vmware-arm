@@ -16,5 +16,9 @@ done
 run_as_vagrant 'eval "$(/home/'"$VAGRANT_USER"'/.local/bin/mise activate bash)"'
 run_as_vagrant 'mise use kubectl'
 run_as_vagrant 'mise use kubecolor'
-echo 'alias kubectl=kubecolor' >> "/home/$VAGRANT_USER/.bashrc"
 run_as_vagrant 'mise use minikube'
+run_as_vagrant 'mise use k9s'
+
+# aliases
+echo 'alias kubectl=kubecolor' >> "/home/$VAGRANT_USER/.bashrc"
+echo 'alias k=kubectl' >> "/home/$VAGRANT_USER/.bashrc"
