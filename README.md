@@ -1,3 +1,7 @@
+# To Note
+
+This is customized to have k8s tools installed to help jump start testing. Feel free to customize this for other purposes as you see fit.
+
 # Provision Ubuntu VMs with Vagrant-VMware on Apple Silicon (M1/M2)
 This repo aims to provision Ubuntu virtual machines (VMs) with [Vagrant](https://developer.hashicorp.com/vagrant) and [VMware Fusion](https://www.vmware.com/products/fusion.html) on Apple Silicon (M1/M2).
 ### Using the Ubuntu-ARM64 Vagrant Box
