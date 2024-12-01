@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
         s.args = ["eth0"]
       end
       node.vm.provision "install-docker", type: "shell", :path => "scripts/install-docker.sh"
-      node.vm.provision "install-kubectl", type: "shell", :path => "scripts/install-kubectl.sh"
+      node.vm.provision "install-mise", type: "shell", :path => "scripts/install-mise.sh"
     end
   end
 end
