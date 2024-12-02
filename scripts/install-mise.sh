@@ -9,7 +9,7 @@ run_as_vagrant() {
 # Mise install
 run_as_vagrant 'curl https://mise.run | sh'
 for shell in bash zsh; do
-    echo "eval \"\$(${HOME}/.local/bin/mise activate $shell)\"" >> "/home/$VAGRANT_USER/.${shell}rc"
+    echo "eval \"\$(/home/$VAGRANT_USER/.local/bin/mise activate $shell)\"" >> "/home/$VAGRANT_USER/.${shell}rc"
 done
 
 # k8s tools install
